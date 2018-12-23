@@ -3,7 +3,7 @@ ARG FROM_IMG_REPO="qnib"
 ARG FROM_IMG_NAME="uplain-cuda"
 ARG FROM_IMG_TAG="2018-12-23.2"
 # Use plain ubuntu to download cudnn
-FROM ubuntu AS build
+FROM ubuntu:latest AS build
 
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true

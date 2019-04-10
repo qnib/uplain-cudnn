@@ -8,7 +8,7 @@ FROM ubuntu AS build
 ENV DEBIAN_FRONTEND=noninteractive \
     DEBCONF_NONINTERACTIVE_SEEN=true
 
-ARG CUDNN_VER=v7.4.1.5
+ARG CUDNN_VER=v7.5.0.56
 ARG CUDA_VER=10.0
 ARG CUDNN_URL=http://people.cs.uchicago.edu/~kauffman/nvidia/cudnn/
 RUN apt-get update \
